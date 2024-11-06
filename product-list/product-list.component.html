@@ -1,0 +1,289 @@
+
+<style>
+        body {
+            font-family:Literater;
+        }
+        .header-top { 
+            background-color: #4CAF50;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 137px;
+            margin-bottom: 71px; /* Bottom margin */
+        }
+        .header-top a {
+            color: white;
+            margin-left: 15px;
+            font-size: 20px;
+            text-decoration: none; 
+        } 
+        .navbar {
+            background-color: #ffffff;
+            height: 96px; /* Height of the navbar */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+            /* margin-top: 77px; Adjust to overlay on the green background */
+            position: absolute;
+            top: 77px;
+            left: 87px;
+            right: 92px;
+            z-index: 1;
+        }
+        .navbar-nav .nav-link {
+            color: black;
+            margin-left: 20px;
+            margin-bottom: 33px;
+            margin-top: 31px;
+
+        }
+        
+        .navbar-nav a {
+            color: white;
+            font-weight: normal;
+        }
+        .navbar-nav a:hover {
+            color: #4CAF50;
+        }
+        .product-list {
+            max-width: 1440px;
+            margin: auto;
+            padding: 20px 15px;
+        }
+        .filter-section {
+            border-right: 1px solid #e0e0e0;
+            padding-right: 20px;
+        }
+        .product-item {
+            border: 1px solid #4CAF50;
+            padding: 10px;
+            border-radius: 15px;
+            text-align: center;
+            background-color: #EDF8EB;
+            width: 100%;
+            box-sizing: border-box;
+            
+        }
+        .product-item-container {
+            padding: 10px; /* Tạo khoảng cách giữa các cột */
+            box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước tổng */
+        }
+        .product-item h6 {
+           font-size: 18px;
+           font-weight: bold;
+           text-align: center;
+           margin-top: 10px;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        .footer {
+            background: linear-gradient(90deg, #4CAF50, #4CB093);
+            color: white;
+            padding: 40px 0;
+            font-size: 14px;
+        }
+        .footer .footer-heading {
+            font-weight: bold;
+        }
+        .btn-customize {
+            background-color: #4C704D;
+            color:white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: #4CAF50;
+        }
+        .btn-customize:hover {
+            background-color: white;
+            color: #4CAF50;
+        }
+        .icons {
+        margin-right: 144.74px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        }
+        .color{
+            color: #4C704D;
+            font-size: 28px;
+        }
+        .custom{
+            background-color:  rgba(154, 183, 107, 0.3);
+            padding: 40px 0;
+        }
+        input[type="radio"]{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #4b5e4b;
+            border-radius: 3px; /* Tạo hình vuông */
+            margin-right: 8px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    </style>
+
+
+     <!-- header -->
+     <div class="header-top">
+        <div class="icons">
+            <a href="#"> Theo dõi qua:  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="27"  fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+            </a>
+            <a href="#" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="33" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+            </a>
+        </div>
+   
+
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg header-top">
+            <a class="navbar-brand text-white" href="#"><img src="../../assets/Images/logo.png" alt="Logo"></a>
+            <ul class="navbar-nav ml-auto main">
+                <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Câu chuyện</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Chính sách</a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="34px" height="32.17px" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg></a></li>
+                <li class="nav-item"><a class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="32.17" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></a></li>
+                <li class="nav-item"><a class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="37" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg></a></li>
+            </ul>   
+        </nav>
+    </div>
+<div class="product-list container-fluid color">
+    <div class="row">
+        <div class="description-section">
+            <h2 class="fw-bold  color">SẢN PHẨM</h2>
+
+        </div>
+        <div class="col-md-3 filter-section">
+            <div class="d-flex align-items-center">
+                <h5 class="fw-bold mb-0" style="margin-right: 20px;">Bộ lọc</h5>
+                <span> 
+                    <a class="ms-1" style="font-weight: normal; font-size: 18px; cursor: pointer;" (click)="clearFilters()"> Xóa bộ lọc</a>
+                </span>
+            </div>
+            <p class="mb-2">Loại sản phẩm</p>
+            <form id="filterForm">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="filterBan" name="type" value="table" [(ngModel)]="selectedProductType">
+                    <label class="form-check-label" for="filterBan">Bàn</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio"  id="filterGhe" name="type" value="chair" [(ngModel)]="selectedProductType" >
+                    <label class="form-check-label" for="filterGhe">Ghế</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="filterSet" name="type" value="set" [(ngModel)]="selectedProductType">
+                    <label class="form-check-label" for="filterSet">Set Bàn Ghế</label>
+                </div>
+                <p class="mt-3 mb-2">Giá sản phẩm</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio"  id="filterDuoi100" name="priceRange" value="under100"  [(ngModel)]="selectedPriceRange">
+                    <label class="form-check-label" for="filterDuoi100">Dưới 100.000đ</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="filter100200" name="priceRange" value="100to200" [(ngModel)]="selectedPriceRange">
+                    <label class="form-check-label" for="filter100200">Từ 100.000đ - 200.000đ</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio"  id="filter200300" name="priceRange" value="200to300" [(ngModel)]="selectedPriceRange">
+                    <label class="form-check-label" for="filter200300">Từ 200.000đ - 300.000đ</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="filterTren300" name="priceRange" value="above300" [(ngModel)]="selectedPriceRange">
+                    <label class="form-check-label" for="filterTren300">Trên 300.000đ</label>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <!-- Sản phẩm -->
+                <div *ngFor="let product of filteredProducts()" class="col-md-4 product-item-container">
+                    <div class="product-item">
+                        <img [src]="product.thumbnail" alt="{{product.title}}" style="width: 300px; height: 300px;">
+                        <h6>{{product.title}}</h6>
+                        <p>{{product.price}} 000 đ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center custom">
+    <p style="font-size: 24px; color: #4C704D;">Bạn muốn tùy chỉnh sản phẩm?</p>
+    <p style="font-size: 16px; color: #4C704D;">Liên hệ ngay với chúng tôi</p>
+    <button class="btn-customize">GỬI YÊU CẦU</button>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 class="footer-heading">Thông tin liên hệ</h5>
+                <p>Địa chỉ: Số 689 QL 1, KP 3, P. Linh Xuân, TP. Thủ Đức, TP. Hồ Chí Minh</p>
+                <p>Email: GreenFurni.com</p>
+                <p>Điện thoại: 0123-456-789</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="footer-heading">Trợ giúp</h5>
+                <ul class="list-unstyled">
+                    <li>Custom sản phẩm</li>
+                    <li>Thu gom nhựa cũ</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="footer-heading">Chính sách</h5>
+                <ul class="list-unstyled">
+                    <li>Chính sách bảo hành</li>
+                    <li>Chính sách giao hàng</li>
+                    <li>Chính sách đổi trả</li>
+                    <li>Chính sách bảo mật</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-3">© 2024 GreenFurni - Made in Viet Nam</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
