@@ -11,23 +11,6 @@ import { Router, RouterModule } from '@angular/router';
   ],
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {  
-  email: string = '';
-  password: string = '';
-  successMessage: string = '';
-
-  constructor(private router: Router) {}
-
-  onSubmit() {
-    if (this.email && this.password) {
-      this.successMessage = 'Đăng nhập thành công!';
-      
-      setTimeout(() => {
-        this.successMessage = '';
-        this.router.navigate(['../homepage']);
-      }, 1000);
-    } else {
-      this.successMessage = 'Vui lòng nhập đầy đủ thông tin!';
-    }
+export class LoginComponent {  }
   }
 }
