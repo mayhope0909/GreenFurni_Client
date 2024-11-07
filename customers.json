@@ -1,0 +1,65 @@
+{
+    "customers": [
+      {
+        "fullName": "Nguyễn Văn An",
+        "email": "nguyenvanan@gmail.com",
+        "phone": "0987654321",
+        "password": "a12345b"
+      },
+      {
+        "fullName": "Trần Thị Bình",
+        "email": "tranthibinh@gmail.com",
+        "phone": "0912345678",
+        "password": "b12345c"
+      },
+      {
+        "fullName": "Phạm Minh Châu",
+        "email": "phamminhchâu@gmail.com",
+        "phone": "0938765432",
+        "password": "c12345d"
+      },
+      {
+        "fullName": "Lê Thị Dương",
+        "email": "lethidương@gmail.com",
+        "phone": "0909876543",
+        "password": "d12345e"
+      },
+      {
+        "fullName": "Hoàng Văn Uyên",
+        "email": "hoangvanuyen@gmail.com",
+        "phone": "0923456789",
+        "password": "e12345f"
+      },
+      {
+        "fullName": "Vũ Thị Yến",
+        "email": "vuthiyen@gmail.com",
+        "phone": "0966543210",
+        "password": "f12345g"
+      },
+      {
+        "fullName": "Đặng Văn Ghi",
+        "email": "dangvanghi@gmail.com",
+        "phone": "0911223344",
+        "password": "g12345h"
+      },
+      {
+        "fullName": "Phan Minh Huy",
+        "email": "phanminhhuy@gmail.com",
+        "phone": "0977765432",
+        "password": "h12345i"
+      },
+      {
+        "fullName": "Đỗ Thị In",
+        "email": "dothiin@gmail.com",
+        "phone": "0901234567",
+        "password": "i12345j"
+      },
+      {
+        "fullName": "Ngô Văn Khôi",
+        "email": "ngovankhoi@gmail.com",
+        "phone": "0988765432",
+        "password": "k12345l"
+      }
+    ]
+  }
+  
