@@ -284,7 +284,6 @@
   padding: 20px;
 }
 
-/* FAQ Section Styles */
 .faq-section {
   margin-top: 40px;
 }
@@ -307,30 +306,30 @@
 
 .faq-question {
   font-weight: bold;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer; 
+  flex-wrap: wrap; 
 }
 
 .faq-question:hover .faq-icon {
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .faq-icon {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .faq-icon.open {
-  transform: rotate(90deg); 
+  transform: rotate(90deg);
 }
 
 .faq-answer {
-  color: #4c704d
+  color: #4c704d;
+  width: 100%; 
+  margin-top: 5px; 
+  white-space: normal; 
 }
 
-.rotated {
-  transform: rotate(90deg);
-  transition: transform 0.3s ease;
-}
 
