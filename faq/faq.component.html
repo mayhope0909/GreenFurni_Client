@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FAQs - CÂU HỎI THƯỜNG GẶP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      .faq-item.active p {
+        display: block;
+      }
+
+      .faq-item.active ul {
+        display: block;
+      }
+
+      .faq-item i {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .faq-item.active i {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>FAQs</h1>
+      <h2>CÂU HỎI THƯỜNG GẶP</h2>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <h2>DANH MỤC TRANG</h2>
+        <hr style="border: 1px solid #4caf50; width: 100%" />
+        <ul>
+          <li (click)="setCategory('baoHanh')">BẢO HÀNH</li>
+          <li (click)="setCategory('datHang')">ĐẶT HÀNG & THANH TOÁN</li>
+          <li (click)="setCategory('giaoHang')">GIAO HÀNG</li>
+          <li (click)="setCategory('sanPham')">SẢN PHẨM</li>
+        </ul>
+      </div>
+      <div class="content">
+        <hr
+          style="width: 800px; height: 1px; background: #4caf50; border: none"
+        />
+        <div class="faq-item" *ngFor="let item of faqItems[selectedCategory]">
+          <h3 (click)="toggleContent(item)">
+            {{ item.question }}
+            <span>
+              <i
+                [ngClass]="{
+                  'fas fa-chevron-down': !item.active,
+                  'fas fa-chevron-up': item.active
+                }"
+              ></i>
+            </span>
+          </h3>
+          <p *ngIf="item.active">{{ item.answer }}</p>
+          <ul *ngIf="item.active">
+            <li *ngFor="let detail of item.details">{{ detail }}</li>
+          </ul>
+
+          <hr
+            style="width: 800px; height: 1px; background: #4caf50; border: none"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
