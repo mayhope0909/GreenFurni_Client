@@ -1,0 +1,267 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GreenFurni</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        padding: 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      .nav .social-icons {
+        margin-left: auto;
+        margin-right: 20px;
+      }
+      .nav .social-icons i {
+        margin: 0 5px;
+        color: #4caf50;
+      }
+      .banner {
+        background: linear-gradient(90deg, #4caf50 50%, #00c9ff 50%);
+        color: white;
+        text-align: center;
+        padding: 50px 0;
+        position: relative;
+      }
+      .banner img {
+        width: 100%;
+        max-width: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .banner h1 {
+        font-size: 48px;
+        margin: 0;
+      }
+      .banner h2 {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+      .banner .btn {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: inline-block;
+      }
+      .content {
+        padding: 20px;
+        text-align: center;
+      }
+      .content h2 {
+        color: #4caf50;
+        margin-bottom: 20px;
+      }
+      .article {
+        display: flex;
+        align-items: center;
+        border: 1px solid #4caf50;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-right: 50px;
+        margin-left: 50px;
+      }
+      .article img {
+        width: 227px;
+        height: 227px;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+      .article h3 {
+        margin: 0 10px;
+        color: #333;
+        text-align: left;
+        padding-left: 10px;
+      }
+      .article p {
+        margin: 0px 10px;
+        padding: 10px;
+        color: #666;
+        text-align: left;
+      }
+      .article .content1 {
+        margin-left: 50px;
+      }
+      .article .author {
+        color: #030303;
+        font-weight: bold;
+      }
+
+      .footer {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .footer .column {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        padding: 0 10px;
+      }
+      .footer .column h3 {
+        margin-top: 0;
+      }
+      .footer .column p,
+      .footer .column a {
+        color: white;
+        text-decoration: none;
+      }
+      .footer .social-icons i {
+        margin: 0 5px;
+      }
+    </style>
+    <script>
+      function hienThiNgay() {
+        const today = new Date();
+        const day = String(today.getDate()).padStart(2, "0");
+        const month = String(today.getMonth() + 1).padStart(2, "0"); // Tháng bắt đầu từ 0
+        const year = today.getFullYear();
+
+        const currentDate = day + "/" + month + "/" + year;
+        document.getElementById("ngayHienTai").innerText = currentDate;
+      }
+
+      window.onload = hienThiNgay; // Gọi hàm khi trang được tải
+    </script>
+  </head>
+  <body>
+    <div class="content">
+      <h2 style="font-family: 'Times New Roman', serif">TẤT CẢ BÀI VIẾT</h2>
+      <div class="article">
+        <img
+          alt="Recycled plastic crafts"
+          height="150"
+          src="https://storage.googleapis.com/a1aa/image/XGUl6NqJPgZPAdGCsF3IRV2mye6DFGXdCavlKnXCURo1OG3JA.jpg"
+          width="150"
+        />
+        <div class="content1">
+          <h3>Đồ thủ công từ nhựa tái chế: Tại sao không?</h3>
+          <p>
+            Tác động mạnh mẽ của việc sử dụng nhựa đối với môi trường đã trở
+            thành một vấn đề quan trọng trong thời gian gần đây. Chúng ta đã
+            chứng kiến sự gia tăng về ý thức bảo vệ môi trường và nỗ lực tái chế
+            nhựa để giảm thiểu tác động tiêu cực lên hành tinh.
+          </p>
+          <p
+            class="author"
+            style="text-align: right; font-family: 'Literata', serif"
+          >
+            Bởi: GreenFurni
+            <br />
+            Ngày: 25/10/2024
+          </p>
+        </div>
+      </div>
+      <div class="article">
+        <img
+          alt="Steps in home plastic recycling"
+          height="150"
+          src="https://storage.googleapis.com/a1aa/image/VB4vUW5tiV4OGBWUHYSiVpTdwfNoUQCdfqVyxjZjy5CqdMuTA.jpg"
+          width="150"
+        />
+        <div class="content1">
+          <h3>
+            Những bước đầu trong việc tái chế nhựa tại nhà: Đóng góp của mỗi cá
+            nhân vào bảo vệ môi trường
+          </h3>
+          <p>
+            Trong thời đại hiện nay, việc bảo vệ môi trường trở thành một vấn đề
+            cấp bách. Một trong những cách đơn giản và hiệu quả để đóng góp cho
+            môi trường là tái chế nhựa tại nhà. Trong bài viết này, chúng ta sẽ
+            khám phá những bước đầu trong việc tái chế nhựa tại nhà và cách mỗi
+            cá nhân có thể đóng góp vào bảo vệ môi trường.
+          </p>
+          <p
+            class="author"
+            style="text-align: right; font-family: 'Literata', serif"
+          >
+            Bởi: GreenFurni
+            <br />
+            Ngày: 25/10/2024
+          </p>
+        </div>
+      </div>
+      <div class="article">
+        <img
+          alt="Plastic waste problem and solutions"
+          height="150"
+          src="https://storage.googleapis.com/a1aa/image/GfhxvfOmcMt4S0AovEZqH1Xr15tzsP9M8dVNjMJ4HG5udMuTA.jpg"
+          width="150"
+        />
+        <div class="content1">
+          <h3>Vấn nạn rác thải nhựa và giải pháp tái chế</h3>
+          <p>
+            Môi trường hiện nay đang bị ảnh hưởng nặng nề bởi rác thải, đặc biệt
+            là rác thải nhựa. Để khắc phục điều đó nhiều tổ chức và cộng đồng đã
+            được lập ra nhằm kêu gọi mọi người nâng cao ý thức, trách nhiệm tái
+            chế, tái sử dụng nhựa đã qua sử dụng. Vậy GreenFurni đã làm gì để
+            hạn chế rác thải nhựa và bảo vệ môi trường? Cùng chúng tôi tìm hiểu
+            qua bài viết này nhé!
+          </p>
+          <p
+            class="author"
+            style="text-align: right; font-family: 'Literata', serif"
+          >
+            Bởi: GreenFurni
+            <br />
+            Ngày: 25/10/2024
+          </p>
+        </div>
+      </div>
+      <div class="article">
+        <img
+          alt="Recycled plastic accessories production process"
+          height="150"
+          src="https://storage.googleapis.com/a1aa/image/UwkfO1iqI5XvP68mgmyZG5zPV7yZnp5O75U0vyfJbYZodMuTA.jpg"
+          width="150"
+        />
+        <div class="content1">
+          <h3>Khám phá quy trình sản xuất phụ kiện từ nhựa tái chế</h3>
+          <p>
+            Trong những năm gần đây, nhựa tái chế đã trở thành nguồn vật liệu
+            phổ biến trong ngành thời trang bền vững, đặc biệt là nhựa tái chế.
+            Những phụ kiện, sản phẩm thời trang làm từ nhựa tái chế đã cho thấy
+            độ bền và thẩm mỹ cao mang nhiều ưu điểm vượt trội, góp phần bảo vệ
+            môi trường. Bạn có tò mò về quy trình sản xuất ra những phụ kiện này
+            không? Hãy cùng GreenFurni khám phá quy trình sản xuất và tìm hiểu
+            tại sao các sản phẩm của GreenFurni là một lựa chọn tuyệt vời cho
+            hành trình của bạn.
+          </p>
+          <p class="author">
+            Bởi: GreenFurni
+            <br />
+            Ngày: <span id="date"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
