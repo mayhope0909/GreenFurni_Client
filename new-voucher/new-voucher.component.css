@@ -1,0 +1,132 @@
+.discount-code-details {
+  background-color: #fff;
+}
+
+.content-wrapper {
+  position: relative;
+  min-height: 1087px;
+  padding: 63px 77px 164px;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1182px;
+  margin: 0 auto;
+  font-family: Literata, sans-serif;
+}
+
+.title-container {
+  flex: 1;
+}
+
+.main-title {
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+}
+
+.divider {
+  margin-top: 9px;
+  border: 1px solid #000;
+  width: 30%;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.cancel-button ,
+.save-button {
+  border-radius: 10px;
+  padding: 15px 38px;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #E36B6B;
+}
+
+.save-button {
+  background-color: #4caf50;
+}
+
+.main-content {
+  position: relative;
+  margin-top: 25px;
+  max-width: 1136px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  flex: 0 0 20%;
+  font-size: 20px;
+  color: #000;
+  font-family: Literata, sans-serif;
+}
+.half-width-group{
+  gap:40px;
+  justify-items: center;
+}
+
+.input-field {
+  flex: 1;
+  border-radius: 10px;
+  height: 45px;
+  border: 1px solid #000;
+  padding: 10px;
+  width: 70%px
+}
+
+.textarea {
+  height: 75px;
+}
+
+@media (max-width: 700px) {
+  .content-wrapper {
+    padding: 0 20px 100px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .action-buttons {
+    margin-top: 20px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-group label {
+    margin-bottom: 5px;
+    text-align: left;
+  }
+}
+
+
